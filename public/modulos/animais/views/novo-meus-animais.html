@@ -1,0 +1,102 @@
+<div class="container">
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h1 class="title">Cadastro</h1>
+		</div>
+
+
+		<div class="panel-body">
+
+
+
+
+
+
+
+
+<div class="list" ng-if="msg.lenght!=0" >
+	<div >
+		<div class="list card">
+
+			<p ng-repeat="item in msg" class="item item-icon-left" href="#">
+				<i class="icon ion-alert-circled"></i>
+				{{item}}
+			</p>
+
+		</div>
+
+
+	</div>
+
+<form id="cadastroAnimais">
+
+	<div class="list list-inset">
+
+
+		<div class="form-group">
+			<label>Nome:</label>
+			<input type="text" name="nome" id="nome" class="form-control" placeholder="Nome" required>
+		</div>
+
+
+		<div class="form-group">
+			<label>Raça:</label>
+			<input type="text" name="raca" id="raca" class="form-control" placeholder="Raça" required>
+		</div>
+
+
+
+		<div class="form-group">
+
+			<label>Gênero:</label>
+
+			<select name="sexo" id="sexo" class="form-control" required>
+				<option value="">Selecione o gênero</option>
+				<option value="macho">Macho</option>
+				<option value="femea">Fêmea</option>
+			</select>
+
+		</div>
+
+
+
+
+		<div class="form-group">
+
+			<label>Categoria:</label>
+
+			<select name="tipos_id" id="tipos_id" class="form-control">
+				<option value="">Selecione o tipo</option>
+				<option value="{{tipo.tipos_id}}" ng-repeat="tipo in tipos">{{tipo.nome}}</option>
+			</select>
+
+		</div>
+
+		<div class="form-group">
+
+			<label>Imagem:</label>
+
+		<input type="file" class="form-control" id="file1" name="arquivo" multiple
+			   ng-files="getTheFiles($files)" />
+
+		</div>
+		
+		<!--<button ng-click="imagem()" class="button button-block button-positive activated">Adicionar Imagem</button>-->
+
+		<input type="hidden" name="imagem" id="imagem">
+
+		<input type="hidden" name="users_id" id="users_id" value="{{token}}">
+		<button ng-click="cadastrar()" class="btn btn-default">Cadastrar</button>
+	</div>
+</form>
+
+
+
+	</div>
+
+	</div>
+
+</div>
+

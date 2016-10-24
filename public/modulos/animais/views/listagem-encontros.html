@@ -1,0 +1,57 @@
+
+<!--<ion-content class="content has-header">-->
+
+<div class="container">
+
+<div class="row" >
+	<h1 class="titulo-principal">Encontros</h1>
+
+<div class="animal">
+	
+	<div class="list card" ng-if="animais.length == 0">
+		<p>Nenhum Item Encontrado</p>
+	</div>
+
+
+
+	<div class="row" ng-if="animais.length > 0">
+
+
+
+	  <div class="item item-body" id="container-info-animal">
+
+		  <div class="col-sm-6 col-md-4">
+
+			  <div class="thumbnail item item-avatar">
+				  <img src="{{animal.imagemdono | concatenaservidor}}" alt="">
+				  <h3>{{animal.dono}}</h3>
+				  <img src="{{animal.imagem | concatenaservidor}}" alt="">
+				  <div class="caption">
+					  <h3>Nome:{{animal.nome}}</h3>
+					  <p>Raça:{{animal.raca}}</p>
+					  <p>
+						  <a class="glyphicon glyphicon-heart" ng-click="par(animal.animais_id)"></a>
+
+						  <a  ng-click="descartar(animal.animais_id)" class="glyphicon glyphicon-remove"></a>
+
+					  </p>
+				  </div>
+			  </div>
+		  </div>
+
+	  	
+	  </div>
+
+
+	</div>
+
+	
+	
+</div>
+
+
+</div>
+
+<!--</ion-content>-->
+
+

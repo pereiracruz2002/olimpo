@@ -1,0 +1,154 @@
+<div class="container">
+    <div class="row">
+
+    <h1 class="titulo-principal">Detalhes do Prestador de Serviços</h1>
+
+
+
+    <div id="dados-principais" class="list card col-md-12">
+
+        <div class="item item-avatar col-md-6">
+            <img ng-src="{{detalhes.users.imagem}}">
+           
+
+        </div>
+
+        <div class="item item-body col-md-6">
+            <h2>{{detalhes.users.nome}}</h2>
+            <p>{{detalhes.users.email}}</p>
+
+            <p>
+                {{detalhes.descricao}}
+            </p>
+
+            <article>
+                <p>{{detalhes.enderecos.endereco}} - {{detalhes.enderecos.bairro}} - {{detalhes.enderecos.cidade}} {{detalhes.endereco.estado}} - {{detalhes.enderecos.cep}}</p>
+            </article>
+
+            <article>
+                <p>Telefone:</p>
+                <p><a href="tel:{{detalhes.enderecos.telefone}}">{{detalhes.enderecos.telefone}}</a></p>
+            </article>
+
+            <p>
+                <a href="#" class="subdued">{{detalhes.qtdGostei}} Gostei</a>
+                <a href="#" class="subdued">{{detalhes.qtdNaoGostei}} Não Gostei</a>
+            </p>
+
+            <a ng-click="curtir(detalhes.users_servicos_id)" class="curtidanao" ng-model="detalhes.curtida" ng-if="detalhes.curtida == 'não'">Curtir</a>
+
+            <a ng-click="curtir(detalhes.users_servicos_id)" class="curtidasim" ng-model="detalhes.curtida"  ng-if="detalhes.curtida == 'sim'">Curtir</a>
+
+        </div>
+
+    </div>
+
+    </div>
+    
+    <div class="row">
+
+        <form id="form-comentario" class="col-md-12">
+
+            <div >
+             <h1>Deixe sua opinião:</h1>      
+             
+            
+            <textarea name="comentario" class="form-control" id="comentario" ng-model="myModel.comentario"  rows="10" placeholder="Digite seu Comentário" ></textarea>
+
+
+            <input type="hidden" name="servico" value="{{servico}}">
+
+            <input type="hidden" name="token" value="{{token}}">
+
+            <button type="submit" ng-click="cadastraComentario()" class="btn btn-primary">
+                Enviar
+            </button>
+
+            </div>
+
+
+
+        </form>
+
+
+        <div id="lista-comentarios">
+        
+        <h1>Comentários:</h1>
+
+        <div class="list card comentarios" ng-repeat="comentario in comentarios | orderBy:'-comentarios_servicos_id'">
+       
+            <div class="item item-avatar">
+                <img ng-src="{{comentario.users.imagem}}">
+
+                <article>
+                <h2>{{comentario.users.nome}}</h2>
+                <p>{{comentario.users.email}}</p>
+                </article>
+
+            </div>
+
+            <div class="item item-body">
+
+                <p>
+                    {{comentario.comentario}}
+                </p>
+
+                <form class="form-reposta" ng-submit="cadastraResposta($event)">
+
+              
+                     <input type="text"  class="form-control" name="resposta" placeholder="Responder Comentário" id="">
+               
+                    
+                <input type="hidden" name="comentarios_servicos_id" id="comentarios_servicos_id" value="{{comentario.comentarios_servicos_id}}">
+
+                 <input type="hidden" name="servico" value="{{servico}}">
+
+                <input type="hidden" name="token" value="{{token}}">
+
+                   <button type="submit" class="btn btn-primary">
+                     Enviar
+                   </button>
+                 </div>
+
+
+                </form>
+
+
+                <div class="list card respostas" ng-repeat="resposta in comentario.respostas | orderBy:'-respostas_comentarios_id'">
+               
+                    <div class="item item-avatar">
+                        <img ng-src="{{resposta.users.imagem}}">
+
+                        <article>
+                        <h2>{{resposta.users.nome}}</h2>
+                        <p>{{resposta.users.email}}</p>
+                        </article>
+
+                    </div>
+
+                    <div class="item item-body">
+
+                        <p>
+                            {{resposta.comentario}}
+                        </p>
+
+                       
+
+                    </div>
+
+                </div>
+
+               
+
+            </div>
+
+            </div>
+
+        </div>
+
+     </div>
+    </div>
+
+
+</div>
+</div>

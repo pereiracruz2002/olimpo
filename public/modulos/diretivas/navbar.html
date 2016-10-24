@@ -1,0 +1,72 @@
+<nav id="navbar">
+
+
+	<div id="menu-header">
+
+	<div class="row">
+
+		<div class="col-30" id="logo">
+	
+		<img src="img/logo.png" alt="">
+
+		</div>
+
+		<div class="col-30" id="btn-menu">
+
+		<img src="img/btn-menu.png" ng-click="abreMenu()" alt="">
+
+		</div>
+
+		<div class="col-60" id="links" >
+
+		<ul>
+			<li><a href=""><img src="img/btn-menu1.png" alt=""></a></li>
+			<li><a href=""><img src="img/btn-menu2.png" alt=""></a></li>
+			<li><a href=""><img src="img/btn-menu3.png" alt=""></a></li>
+		</ul>
+
+		</div>
+	</div>
+
+	</div>
+
+	<div id="menu-conteudo">
+	
+	<div class="row" id="container-foto">
+	
+		<div ng-repeat="imagem in user.imagem" class="col-90" >
+		
+			<img src="{{imagem.arquivo}}" ng-if="imagem.principal == 1">
+
+		</div>
+	</div>
+
+	<div class="row">
+		
+		<div class="col-90">
+			
+			<ul id="menu-links">
+				<li><a href="#/usuarios/{{user.users_id}}" class="editar">Editar Perfil</a></li>
+				<li><a href="#/usuarios/tags/{{user.users_id}}" class="editar">Prefêrencias</a></li>
+				<li><a href="#" class="album">Album de Fotos</a></li>
+				<li><a href="#/usuarios/mensagens/{{user.users_id}}" class="mensagem">Mensagens</a></li>
+				<li><a href="#" class="feed">Feed de Notícias</a></li>
+				<li><a href="#/eventos/" class="feed">Eventos</a></li>
+				<li><a href="#" class="noticias">PSDC Mulher Notícias</a></li>
+				<li><a href="#" class="noticias">PSDC Nacional</a></li>
+				<li><a href="#" class="noticias">PSDC Jovem</a></li>
+				<li><a href="#" class="outros">Outro link útil aqui</a></li>
+				<li><a href="#" class="outros">Outro link útil aqui de novo</a></li>
+				<li><a href="#">Sair</a></li>
+			</ul>
+
+		</div>
+
+
+	</div>
+
+
+
+	</div>
+
+</nav>

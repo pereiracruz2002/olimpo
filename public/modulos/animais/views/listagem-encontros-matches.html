@@ -1,0 +1,32 @@
+<div class="container">
+
+
+<div class="bar bar-header bar-positive">
+	<h1 class="title">Combinações</h1>
+</div>
+
+
+
+
+
+
+	<ul class="list" id="listagem-animais">
+
+		<li ng-repeat="animal in animais" class="col-md-6">
+
+	    <a class="item item-avatar" href="#/encontros/detalhes_matches/{{animal.animais_id}}/{{animais_id}}" >
+	      <img src="{{animal.imagem |concatenaservidor }}">
+	      <h2>{{animal.nome}}</h2>
+	      <p>Raça:{{animal.raca}}</p>
+	    </a>
+
+	    </li>
+
+	</ul>
+
+</div>
+
+
+
+
+

@@ -1,0 +1,16 @@
+{
+  "name": "petservices",
+  "version": "0.0.0",
+  "authors": [
+    "Wvtodoz"
+  ],
+  "description": "Versão Web do Aplicativo Pet Service",
+  "main": "index.php",
+  "keywords": [
+    "wv123"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.5.0"
+  }
+}

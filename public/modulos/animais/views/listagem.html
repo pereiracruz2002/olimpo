@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+    	
+    	<h1 class="titulo-principal">Listagem de animais</h1>
+
+		<a href="#/meus-animais/">Meus Animais</a>
+    	
+		
+		<ul id="listagem-animais" class="col-md-12 nopadding" >
+
+		<li class="col-md-4 " ng-repeat="animal in animais">
+		
+		<a href="#/servicos/{{animal.tipos.tipos_id}}">
+
+		  <div class="item">
+		  
+		    <h2>{{animal.nome}}</h2>
+		    <!--<p>{{animal.created_at | formata_datetime}}</p>-->
+		  </div>
+
+		  <div class="item item-body">
+		    <img class="full-image" src="{{animal.imagem | concatenaservidor}}">
+		  </div>
+
+		 </a>
+			<a href="#/servicos/{{animal.tipos.tipos_id}}">Serviços</a>
+			<a href="#/encontros/{{animal.animais_id}}">Encontros</a>
+			<a href="#/encontros/matches/{{animal.animais_id}}">Combinações</a>
+		 </li>
+
+
+		</ul>
+
+	</div>
+	</div>
+
+

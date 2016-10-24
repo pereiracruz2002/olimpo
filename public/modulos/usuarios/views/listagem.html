@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+
+
+    <h1 class="titulo-principal">Prestadores de Serviços</h1>
+
+
+    <ul ng-repeat="usuario in usuarios" id="lista-prestadores" class="list col-md-12">
+    	<li class="col-md-4">
+        <a class="item item-avatar" href="/#/usuarios/detalhe/{{usuario.users_id}}">
+            <img ng-src="{{usuario.imagem}}">
+            <h2>{{usuario.nome}}</h2>
+            <p>{{usuario.email}}</p>
+        </a>
+        </li>
+        
+    </ul>
+
+ </div>
+ </div>
+
+
+

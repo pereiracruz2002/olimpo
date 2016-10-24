@@ -1,0 +1,125 @@
+
+<div id="menu-opcoes">
+	<a id="mostra-menu">Menu</a>
+	<ul class="opcoes">
+		<li ng-click="descombinar()">Descombinar</li>
+		<li ng-click="mostrarOpcaoDenuncia()">Denunciar</li>
+	</ul>
+
+</div>
+
+<div class="container" id="geral">
+
+
+
+
+
+		<div class="row responsive-sm">
+			<h1 class="col col-50">Conversas</h1>
+		</div>
+
+
+
+
+		<div id="opt-denuncia">
+
+			<form id="denuncias">
+				<div>
+
+		
+				<input type="radio" name="opcoes" ng-click="hideTextarea()" id="Inapropriada"> Inapropriada
+				<input type="radio" name="opcoes" ng-click="hideTextarea()" id="Inadequada">Inadequada
+				<input type="radio" name="opcoes"  ng-click="showTextarea()" id="Outros">Outros
+
+					
+				</div>
+
+				<textarea name="texto" rows="5" id="texto" placeholder="Escreva sua denúncia."></textarea>
+				<button ng-click="denunciar()"  class="button button-full button-positive">Salvar</button>
+			</form>
+		</div>
+
+
+
+
+
+
+
+
+<!--
+		<ion-side-menus enable-menu-with-back-views="true">
+			<ion-side-menu-content>
+				<ion-nav-bar class="bar-stable">
+					<ion-nav-back-button>
+					</ion-nav-back-button>
+
+					<ion-nav-buttons side="right">
+						<button class="button button-icon button-clear ion-navicon" menu-toggle="right">
+						</button>
+					</ion-nav-buttons>
+				</ion-nav-bar>
+				<ion-nav-view name="menuContent"></ion-nav-view>
+			</ion-side-menu-content>
+
+			<ion-side-menu side="right">
+				<ion-header-bar class="bar-stable">
+
+				</ion-header-bar>
+				<ion-content>
+					<ion-list>
+						<ion-item menu-close ng-click="mostrarOpcaoDenuncia()">
+							Denúnicar
+						</ion-item>
+
+						<ion-item menu-close ng-click="descombinar()">
+							Descombinar
+						</ion-item>
+					</ion-list>
+				</ion-content>
+			</ion-side-menu>
+		</ion-side-menus>
+
+
+		-->
+
+
+		<ul id="conversas" class="list" >
+
+			<li ng-repeat="conversa in conversas">
+
+			<a class="item item-avatar" >
+				
+				<img src="{{conversa.animais.imagem |concatenaservidor }}">
+			
+
+				<article>
+					<h2>{{conversa.animais.nome}} {{conversa.updated_at | formata_datetime}} :</h2>
+					<p>{{conversa.mensagem}}</p>
+				</article>
+				
+			</a>
+
+			</li>
+
+			
+
+		</ul>
+
+	
+
+</div>
+
+<form id="enviaconversas" class="col-md-12">
+
+	<div class="form-group">
+	<textarea name="mensagem" class="form-control " rows="1" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+
+	<input type="hidden" id="sala" name="sala" value="{{sala}}" />
+	<input type="hidden" id="animais_id" name="animais_id" value="{{meuAnimal}}" />
+	<button ng-click="enviarMensagem()"  class="btn btn-primary ">Enviar</button>
+	</div>	
+</form>
+
+
+

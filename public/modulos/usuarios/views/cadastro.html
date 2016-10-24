@@ -1,0 +1,86 @@
+<div id="container-cadastro">
+<div class="container" >
+<div >
+
+
+
+
+</div>
+
+<div class="panel-body">
+
+	<div id="logo-pet">
+
+	<img src="/imagens/logo-pet.png" >
+
+	</div>
+
+
+	<p id="texto-cadastro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolorem natus provident, libero quo praesentium molestias voluptatum. Voluptate fugiat tempore totam optio id velit necessitatibus veniam aliquam. Recusandae, labore, corporis.</p>
+
+	
+	
+	  <form id="form-cadastro-usuario" name="mainForm" ng-submit="cadastrar()" >
+
+	  		<h1 id="titulo-cadastro">Cadastra-se</h1>
+
+	  		<div ng-if="msg.length > 0" >
+	  			<div class="alert alert-success" role="alert">
+	  				<p ng-repeat="item in msg" class="item item-icon-left" href="#">
+	  					{{item}}
+	  				</p>
+	  			</div>
+	  		</div>
+		  <fieldset>
+			<div class="form-group" ng-submit="cadastrar()">
+				<input type="text" class="form-control" name="nome" ng-model="nome" placeholder="Nome Completo" required>
+				<span class="error-login" ng-show="mainForm.nome.$invalid">Nome Completo obrigatório</span>
+			</div>
+
+			<div class="form-group">
+				<input type="text" class="form-control" name="email" ng-model="email" placeholder="E-mail" required>
+				<span class="error-login" ng-show="mainForm.email.$invalid">E-mail obrigatório</span>
+			</div>
+
+			<div class="form-group">
+				<input type="password" class="form-control" name="senha" ng-model="senha" placeholder="Senha" required>
+				<span class="error-login" ng-show="mainForm.senha.$invalid">Senha obrigatória</span>
+			</div>
+
+			<div class="form-group">
+				<input type="text" name="cpf" class="form-control"  ng-model="cpf" placeholder="CPF" required>
+				<span class="error-login" ng-show="mainForm.cpf.$invalid">CPF obrigatório</span>
+				
+			</div>
+			
+
+
+
+
+		  </fieldset>
+		  <input type="image" src="/imagens/btn-ok.png" ng-disabled="mainForm.$invalid" alt="Submit" id="botao-cadastro">
+
+
+	 <div>
+
+	 	<ul id="lista-redes">
+	 		<li><a href=""><img src="/imagens/facebook-icon.png" alt=""></a></li>
+	 		<li><a href=""><img src="/imagens/twitter-icon.png" alt=""></a></li>
+	 		<li><a href=""><img src="/imagens/email-icon.png" alt=""></a></li>
+	 		<li><a href=""><img src="/imagens/skype-icon.png" alt=""></a></li>
+	 		<li><a href=""><img src="/imagens/scrap-icon.png" alt=""></a></li>
+	 	</ul>
+	 </div>
+
+	</form>
+
+
+
+	
+
+
+	</div>
+
+	</div>
+
+

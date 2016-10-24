@@ -1,0 +1,531 @@
+ul {
+list-style: none !important;
+
+}
+
+
+h1.titulo-principal{
+    margin-bottom: 20px !important;
+}
+.form-bottom {
+    margin-top:50px;
+    padding: 25px 25px 30px 25px;
+   width: 
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    text-align: left;
+}
+
+
+.form-bottom img {
+    display: inline-block;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+
+
+ul li{
+
+	list-style: none;
+
+}
+
+#listagem-animais{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
+
+#listagem-animais li{
+  border: 1px solid #000;
+
+
+}
+
+#listagem-animais li img{
+	display: inline-block;
+	width:100%;
+	min-height: 100px;
+	border:1px solid #000;
+	margin-bottom: 10px;
+
+}
+
+#lista-categorias{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#lista-categorias li{
+    display:block;
+    background: #00FFFF;
+}
+
+#lista-categorias li a{
+    display: block;
+    
+    margin-top: 10px;
+    font-size: 20px;
+    color:  #000;
+    text-indent: 10px;
+    text-decoration: none;
+
+
+}
+
+#lista-categorias li a:hover{
+    opacity: 0.7;
+    border:1px solid #000;
+}
+
+#lista-prestadores {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#lista-prestadores li{
+    border: 1px solid #000;
+    padding-top: 10px;
+}
+
+#lista-prestadores li a{
+    display: block;
+}
+
+#lista-prestadores li img{
+    display: inline-block;
+    width: 100%;
+
+}
+
+
+#dados-principais{
+    display: table;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+#dados-principais .item-avatar{
+    padding: 0 !important;
+    margin: 0 !important; 
+}
+
+#dados-principais img{
+
+    width:100%;
+
+}
+
+#form-comentario{
+    display: table;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    margin-bottom: 20px !important;
+}
+
+#form-comentario textarea{
+    margin-bottom: 10px;
+}
+
+#lista-comentarios{
+
+}
+
+#lista-comentarios h1{
+    margin-bottom: 20px !important;
+}
+
+div.comentarios .item-avatar img{
+
+    width:50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+
+
+
+}
+
+div.comentarios{
+    width:100%;
+
+}
+
+div.comentarios input[type="text"]{
+    display: inline-block;
+    width:90% !important;
+}
+
+div.comentarios button[type="submit"]{
+    display: inline-block;
+    width:9% !important;
+}
+
+div.comentarios .item-avatar article{
+    display: inline-block;
+}
+
+div.comentarios .item-avatar article h2{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 10px;
+}
+
+div.comentarios .item-body{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.comentarios .respostas{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #555;
+
+}
+
+div.comentarios .respostas .item-avatar article{
+    display: inline-block;
+}
+
+div.comentarios .respostas .item-avatar article h2{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 10px;
+}
+
+
+#editarAnimais figure{
+
+    width: 100%;
+
+}
+
+#editarAnimais figure img{
+    width:100%;
+}
+
+#container-cadastro{
+    background: url("../imagens/background-topo.png") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+}
+
+#titulo-cadastro{
+    color: #0fa0c4;
+    font-family: "ArialRoundedMTBold";
+    text-shadow:5px 5px 3px #000,-5px -5px 3px #000;
+    margin-bottom: 20px;
+}
+
+#logo-pet{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#logo-pet img{
+    width: 100%;
+}
+
+#texto-cadastro{
+    color: #fff;
+
+    width: 32%;
+    margin-left: auto;
+
+    margin-right: auto;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin-top: 22px;
+}
+
+#form-cadastro-usuario{
+    text-align: center;
+    width: 32%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
+
+#form-cadastro-usuario input[type="text"],input[type="password"]{
+    background: transparent;
+    border:1px solid #fff !important;
+    border-radius: 5px;
+      font-family: 'Ubuntu', sans-serif;
+      color: #fff;
+}
+
+.form-bottom input[type="text"],input[type="password"]{
+    background: transparent;
+    border:1px solid #fff !important;
+    border-radius: 5px;
+      font-family: 'Ubuntu', sans-serif;
+      color: #fff;
+}
+
+
+#form-cadastro-usuario input[type="text"]::-webkit-input-placeholder {
+    color: #fff; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.form-bottom input[type="text"]::-webkit-input-placeholder {
+    color: #fff; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#form-cadastro-usuario input[type="text"]:-moz-placeholder {
+    color: #fff; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form-bottom input[type="text"]:-moz-placeholder {
+    color: #fff; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#form-cadastro-usuario input[type="text"]::-moz-placeholder {
+    color: #fff; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form-bottom input[type="text"]::-moz-placeholder {
+    color: #fff; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+#form-cadastro-usuario input[type="text"]:-ms-input-placeholder {  
+    color: #fff;  
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form-bottom input[type="text"]:-ms-input-placeholder {  
+    color: #fff;  
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+#form-cadastro-usuario input[type="password"]::-webkit-input-placeholder {
+    color: #fff; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form-bottom input[type="password"]::-webkit-input-placeholder {
+    color: #fff; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+#form-cadastro-usuario input[type="password"]:-moz-placeholder {
+    color: #fff; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.form-bottom input[type="password"]:-moz-placeholder {
+    color: #fff; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+#form-cadastro-usuario input[type="password"]::-moz-placeholder {
+    color: #fff; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form-bottom  input[type="password"]::-moz-placeholder {
+    color: #fff; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+#form-cadastro-usuario input[type="password"]:-ms-input-placeholder {  
+    color: #fff;  
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form-bottom  input[type="password"]:-ms-input-placeholder {  
+    color: #fff;  
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#botao-cadastro{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#botao-cadastro:hover{
+    opacity: 0.8;
+}
+
+
+#lista-redes{
+    margin:0 !important;
+    padding: 0 !important;
+}
+
+#lista-redes li{
+    display: inline-block;
+}
+
+.btn{
+    font-family: "Ubuntu",sans-serif !important;
+    font-weight: bold !important; 
+}
+.btn-warning{
+    background-color: #f00 !important;
+    border:  1px solid #f00 !important;
+}
+
+#denuncias, .textearea{
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+}
+
+#conversas{
+    height: 70vh;
+    overflow-x:hidden;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+
+#enviaconversas{
+
+    width: 100%;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999999;
+    padding: 5px;
+    background-color: #fff;
+
+
+}
+
+#enviaconversas textarea{
+    width: 90%;
+    float: left;
+}
+
+#enviaconversas button{
+    width: 10%;
+    float: left;
+}
+
+#menu-opcoes{
+    background: #000;
+    color: #fff;
+    text-align: right;
+    position: relative;
+}
+
+#menu-opcoes a{
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+#menu-opcoes ul{
+    display: none;
+}
+
+
+#menu-opcoes ul{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#menu-opcoes ul li{
+    line-height: 30px;
+}
+
+#conversas li{
+    width: 100%;
+}
+
+#conversas li img{
+    width: 5%;
+    border-radius: 100%;
+  
+}
+
+
+
+#conversas li article{
+    display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+
+
+}
+
+#conversas li article h2{
+    font-size: 15px;
+    color: #000;
+    font-family: "Ubuntu",sans-serif;
+}
+
+#conversas li article p{
+    font-size: 15px;
+
+    font-family: "Ubuntu",sans-serif;
+}
+
+
+#geral{
+    position: relative;
+}
+
+#opt-denuncia{
+
+    width:500px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1px solid #000;
+    z-index: 999999999999999;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+
+#opt-denuncia textarea{
+    width: 100%;
+}
+
+
+span.error-login{
+    color: #f00!important;
+}

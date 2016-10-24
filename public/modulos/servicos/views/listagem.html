@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+
+
+    <h1 class="titulo-principal">Categorias de Serviços</h1>
+
+
+
+        <ul  id="lista-categorias" class="list card">
+
+            <li  ng-repeat="servico in servicos" class="item item-button-right">
+                
+                <a href="#/usuarios/servico/{{servico.servicos_id}}" class="button button-positive">
+                    {{servico.nome}}
+                </a>
+            </li>
+
+        </ul>
+
+        </div>
+
+        </div>
+
